@@ -8,9 +8,12 @@
 
 ## Configurando la owl
 Primeramente nos dirigimnos al sitio oficial de [Fuseki](https://jena.apache.org/download/), luego al apartado de Apache Jena Fuseki, lo descargamos y lo instalamos.
+
 Lo configuramos, puede revisar la configuración en este[enlace](https://programmerclick.com/article/88961947895/).
+
 Luego creamos un [dataset](https://www.youtube.com/watch?v=W-g6oyjBkWk&t=297s) y subimos la nuestro archivo mypizza.owl de nuestro repositorio.
 Podemos probar consulta de nestro dataset en la parte de query de Fuseki.
+
 Luego nos vamos a info y copiamos la URL del repoitorio ya ponemos en el archivo OWLmypizza y podemos ir probando las consultas SPARQL.
 
 ## botsito.py
