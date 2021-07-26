@@ -29,3 +29,4 @@ if __name__ == '__main__':
     result = get_response_dbpedia_pizzas()
     for item in result:
         name, comment, image_url = result['name']['value'], result['comment']['value'], result['image']['value']
+

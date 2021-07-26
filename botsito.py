@@ -33,7 +33,6 @@ def start_command(update, context):
             [InlineKeyboardButton(text='PizzasRecomendadas', callback_data='PizzasRecomendadas')],
             [InlineKeyboardButton(text='PizzasTradicionales', callback_data='PizzasTradicionales')],
             [InlineKeyboardButton(text='Mensaje Personalizado', callback_data='PLN')],
-
         ])
         )
 
@@ -73,25 +72,18 @@ def processText(update, context):
 
 
 if __name__ == '__main__':
-
     updater = Updater(token="1781905513:AAEQ-KAY_UPonjsXzT1FtiBMiaodgbYJ2U8", use_context=True)
-
     dp = updater.dispatcher
-
     # Commands
-
     dp.add_handler(CommandHandler('start', start_command))
     dp.add_handler(CallbackQueryHandler(pattern='PizzasRecomendadas', callback=types_command_dbpedia))
     dp.add_handler(CallbackQueryHandler(pattern='PizzasTradicionales', callback=types_command_owl))
     dp.add_handler(MessageHandler(Filters.text, processText))
-
-
     # Messages
-
     # Log all errors
     dp.add_error_handler(error)
-
     # Run the bot
     updater.start_polling(1.0)
     updater.idle()
+
 
